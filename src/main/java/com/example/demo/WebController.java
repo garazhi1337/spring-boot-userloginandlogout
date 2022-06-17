@@ -26,6 +26,16 @@ public class WebController {
 		return "registration";
 	}
 	
+	@GetMapping("/add")
+	public String getAddPicture(Model model) {
+		return "addPicture";
+	}
+	
+	@GetMapping("/pictures")
+	public String getPicture(Model model) {
+		return "pictures";
+	}
+	
 	@PostMapping("/registration")
 	public String addNewUser (@RequestParam String email, @RequestParam String password) {
 

@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+header {
+	background-color:white;
+	overflow: auto;
+	height:80px;
+}
+li {
+    display: inline;
+    margin-left:30px;
+    margin-right:30px;
+    font-size:30px;
+    font-family:'Times New Roman';
+    float:right;
+}
+a {
+	color:black;
+	text-decoration:none;
+}
+input {
+	border:1px solid #00cd00;
+	height:25px;
+	width:300px;
+	border-radius:15px;
+	text-align:center;
+}
+input:focus {
+	border:2px solid #00cd00;
+	outline: none;
+}
+button {
+	border:1px solid #000000;
+	border-radius:15px;
+	height:25px;
+	width:300px;
+	background-color:#f8f8f8;
+	margin:7px;
+}
+button:focus {
+	border:2px solid #000000;
+	outline: none;
+}
+h1 {
+	font-family:'Times New Roman';
+}
+#glavnaya {
+	color:#00cd00;
+}
+#registrationForm {
+	text-align:center;
+}
+#inputEmail {
+	margin:7px;
+}
+#inputPassword{ 
+	margin:7px;
+}
+#rememberMe {
+	margin:7px;
+}
+#reg{
+	display: inline;
+    margin-left:10px;
+    margin-right:10px;
+    font-size:15px;
+    font-family:'Times New Roman';
+    float:left;
+}
+#enter{
+	display: inline;
+    margin-left:10px;
+    margin-right:10px;
+    font-size:15px;
+    font-family:'Times New Roman';
+    float:left;
+}
+
