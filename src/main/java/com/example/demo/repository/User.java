@@ -1,8 +1,11 @@
-package com.example.demo.user;
+package com.example.demo.repository;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.*;
+
+import com.example.demo.security.ERole;
 
 @Entity
 @Table(name="people")
@@ -14,12 +17,8 @@ public class User {
 	private String password;
 	private String email;
 	private String username;
-	private boolean active;
-	
-	/*@ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
-	@CollectionTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"))
-	@Enumerated(EnumType.STRING)
-	private Set<Role> roles;*/
+	@Enumerated()
+	private ERole role;
 	
 	public void setId(Long id) {
 		this.id = id;
@@ -53,29 +52,19 @@ public class User {
 		this.username = username;
 	}
 
-	/*public Set<Role> getRoles() {
-		return roles;
+	public ERole getRole() {
+		return role;
 	}
 
-	public void setRoles(Set<Role> user) {
-		this.roles = user;
-	}*/
-
-	public boolean isActive() {
-		return active;
-	}
-
-	public void setActive(boolean isActive) {
-		this.active = isActive;
+	public void setRole(ERole role) {
+		this.role = role;
 	}
 
 	public User() {
 		
 	}
 	
-	public User(String password, String email, String username, boolean active) {
-		
-		this.active = true;
+	public User(String password, String email, String username) {
 		this.username = username;
 		this.password = password;
 		this.email = email;
