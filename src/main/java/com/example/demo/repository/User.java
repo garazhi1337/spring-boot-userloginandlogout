@@ -5,8 +5,6 @@ import java.util.Set;
 
 import javax.persistence.*;
 
-import com.example.demo.security.ERole;
-
 @Entity
 @Table(name="people")
 public class User {
@@ -17,8 +15,6 @@ public class User {
 	private String password;
 	private String email;
 	private String username;
-	@Enumerated()
-	private ERole role;
 	
 	public void setId(Long id) {
 		this.id = id;
@@ -52,13 +48,6 @@ public class User {
 		this.username = username;
 	}
 
-	public ERole getRole() {
-		return role;
-	}
-
-	public void setRole(ERole role) {
-		this.role = role;
-	}
 
 	public User() {
 		
