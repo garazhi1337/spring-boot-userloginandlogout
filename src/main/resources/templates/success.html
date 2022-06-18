@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Вы вошли</title>
+<link rel="stylesheet" th:href="@{/css/stylesheet.css}"/>
+</head>
+<body>
+	<header th:insert="navbar :: header"></header>
+	<h1> УСПЕX </h1>
+	<form action="/auth/logout" method="post">
+	<button type="submit"> Выйти</button>
+	</form>
+</body>
+</html>

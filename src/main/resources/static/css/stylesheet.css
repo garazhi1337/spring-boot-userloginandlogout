@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+#logoutButton {
+	border:1px solid #000000;
+	border-radius:15px;
+	background-color:#f8f8f8;
+}
+
 header {
 	background-color:white;
 	overflow: auto;
@@ -28,7 +34,15 @@ input:focus {
 	border:2px solid #00cd00;
 	outline: none;
 }
-button {
+#loginButton {
+	border:1px solid #000000;
+	border-radius:15px;
+	height:25px;
+	width:300px;
+	background-color:#f8f8f8;
+	margin:7px;
+}
+#regButton {
 	border:1px solid #000000;
 	border-radius:15px;
 	height:25px;
@@ -66,7 +80,7 @@ h1 {
     font-family:'Times New Roman';
     float:left;
 }
-#enter{
+#login{
 	display: inline;
     margin-left:10px;
     margin-right:10px;
@@ -74,4 +88,18 @@ h1 {
     font-family:'Times New Roman';
     float:left;
 }
+#logout{
+	display: inline;
+    margin-left:10px;
+    margin-right:10px;
+    font-size:15px;
+    font-family:'Times New Roman';
+    float:left;
+}
+
+#loginForm {
+	text-align:center;
+}
+
+
 
