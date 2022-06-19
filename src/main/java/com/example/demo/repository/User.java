@@ -14,6 +14,7 @@ public class User {
 	private Long id;
 	private String password;
 	private String email;
+	@Column(unique = true)
 	private String username;
 	
 	public void setId(Long id) {

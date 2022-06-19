@@ -2,10 +2,28 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <link rel="stylesheet" th:href="@{/css/stylesheet.css}"/>
+<link rel="stylesheet" th:href="@{/css/tableStylesheet.css}"/>
 <meta charset="UTF-8">
 <title>Главная</title>
 </head>
 <body>
 	<header th:insert="navbar :: header"></header>
+	<div>
+	<h1> Пользователи </h1>
+<table>
+    <thead>
+        <tr>
+            <th> Id </th>
+            <th> Имя пользователя</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="user : ${users}">
+            <td><span th:text="${user.id}"> Id </span></td>
+            <td><span th:text="${user.username}"> Username </span></td>
+        </tr>
+    </tbody>
+</table>
+	</div>
 </body>
 </html>
