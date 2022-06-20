@@ -7,5 +7,9 @@
 </head>
 <body>
 	<header th:insert="navbar :: header"></header>
+	<form action="/add" method="post" enctype="multipart/form-data">
+		<input type="file" name="file" id="file"/>
+		<button type="submit">Добавить изображение</button>
+	</form>
 </body>
 </html>

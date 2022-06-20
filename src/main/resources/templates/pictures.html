@@ -2,10 +2,31 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <link rel="stylesheet" th:href="@{/css/stylesheet.css}"/>
+<link rel="stylesheet" th:href="@{/css/tableStylesheet.css}"/>
 <meta charset="UTF-8">
 <title>Изображения</title>
 </head>
 <body>
 	<header th:insert="navbar :: header"></header>
+<table>
+    <thead>
+        <tr>
+            <th> Id </th>
+            <th> Размер(bytes)</th>
+            <th> Название</th>
+            <th> Размер</th>
+            <th> Тип</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="picture : ${pictures}">
+            <td><span th:text="${picture.id}"> </span></td>
+            <td><span th:text="${picture.bytes}">  </span></td>
+            <td><span th:text="${picture.name}"> </span></td>
+            <td><span th:text="${picture.size}"> </span></td>
+            <td><span th:text="${picture.contentType}"> </span></td>
+        </tr>
+    </tbody>
+</table>
 </body>
 </html>
