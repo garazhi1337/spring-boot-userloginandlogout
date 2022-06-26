@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" th:href="@{/css/stylesheet.css}"/>
+<meta charset="UTF-8">
+<title>Записи</title>
+</head>
+<body>
+	<div>
+		<header th:insert="navbar :: header"></header>
+	</div>
+	<div id="postsTable">
+		<table>
+            <thead>
+        		 <tr>
+            		<th> Записи </th>
+       			 </tr>
+    		</thead>
+   			 <tbody>
+        		<tr>
+            		<td><span> </span></td>
+            		<td><span> </span></td>
+            		<td><span> </span></td>
+            		<td><span> </span></td>
+        		</tr>
+    		</tbody>
+		</table>
+		<a href="/posts/add">Добавить запись</a>
+	</div>
+</body>
+</html>

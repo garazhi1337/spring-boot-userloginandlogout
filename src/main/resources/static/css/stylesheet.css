@@ -15,13 +15,13 @@ header {
 	background-color:white;
 	background: rgb(141,255,73);
 	background: linear-gradient(90deg, rgba(141,255,73,1) 0%, rgba(28,102,19,1) 100%, rgba(0,212,255,1) 100%);
-	position:fixed;
     padding:0;
     margin:0;
     top:0;
     left:0;
     width: 100%;
-    height: 9%;
+    height:80px;
+    position:fixed;
 }
 
 li {
@@ -136,6 +136,37 @@ form {
 	margin-top:20px;
 }
 
-#messages {
+#posts {
 	color: #ffffff;
+}
+
+#postsTable {
+	margin-top:100px;
+}
+
+#addDiv {
+	margin-top:130px;
+	text-align:center;
+}
+
+.addClass {
+	width:1000px;
+	height:30px;
+	border:1px solid #00cd00;
+	border-radius:4px;
+	font-size:20px;
+}
+
+.addClass:focus {
+	border:2px solid #00cd00;
+	outline:none;
+}
+
+#fullText {
+	height:400px;
+}
+
+#addButton {
+	width:200px;
+	height:30px;
 }

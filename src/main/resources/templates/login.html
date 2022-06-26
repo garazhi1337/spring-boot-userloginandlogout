@@ -6,7 +6,9 @@
         <title>Spring Security Example </title>
     </head>
     <body>
-    	<header th:insert="navbar :: header"></header>
+    	<div>
+			<header th:insert="navbar :: header"></header>
+		</div>
         <form action="/auth/login" method="post" id="loginForm">
         	<h1> Please log in </h1>
             <div><input type="text" name="username" placeholder="username"/></div>

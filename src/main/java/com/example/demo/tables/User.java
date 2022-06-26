@@ -1,6 +1,9 @@
 package com.example.demo.tables;
 
+import java.util.List;
+
 import javax.persistence.*;
+
 
 @Entity
 @Table(name="people")
@@ -16,6 +19,8 @@ public class User {
 	private String email;
 	@Column(unique = true)
 	private String username;
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
+	private List<Post> posts;
 	
 	public void setId(Long id) {
 		this.id = id;

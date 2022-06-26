@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" th:href="@{/css/stylesheet.css}"/>
+<title>Добавить запись</title>
+</head>
+<body>
+	<div>
+		<header th:insert="navbar :: header"></header>
+	</div>
+	<div id="addDiv">
+	<form id="addForm" method="post" action="/posts/add">
+		<textarea placeholder="Название" name="title" class="addClass"></textarea><br>
+		<textarea placeholder="Полный текст" name="fulltext" class="addClass" id="fullText"></textarea><br>
+		<button type="submit" id="addButton">Добавить</button><br>
+	</form>
+	</div>
+</body>
+</html>
