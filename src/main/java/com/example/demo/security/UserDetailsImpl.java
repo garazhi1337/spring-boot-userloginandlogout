@@ -1,12 +1,10 @@
 package com.example.demo.security;
 
 import java.util.Collection;
-import java.util.List;
-import java.util.Set;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import com.example.demo.repository.User;
+
+import com.example.demo.tables.User;
 
 public class UserDetailsImpl implements UserDetails{
 
@@ -14,19 +12,16 @@ public class UserDetailsImpl implements UserDetails{
 	
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-		// TODO Auto-emailgenerated method stub
 		return null;
 	}
 
 	@Override
 	public String getPassword() {
-		// TODO Auto-generated method stub
 		return user.getPassword();
 	}
 
 	@Override
 	public String getUsername() {
-		// TODO Auto-generated method stub
 		return user.getUsername();
 	}
 
@@ -44,25 +39,21 @@ public class UserDetailsImpl implements UserDetails{
 
 	@Override
 	public boolean isAccountNonExpired() {
-		// TODO Auto-generated method stub
 		return true;
 	}
 
 	@Override
 	public boolean isAccountNonLocked() {
-		// TODO Auto-generated method stub
 		return true;
 	}
 
 	@Override
 	public boolean isCredentialsNonExpired() {
-		// TODO Auto-generated method stub
 		return true;
 	}
 
 	@Override
 	public boolean isEnabled() {
-		// TODO Auto-generated method stub
 		return true;
 	}
 }

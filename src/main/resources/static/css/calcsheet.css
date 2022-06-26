@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+#calcInput {
+	width:360px;
+	height:50px;
+	border:1px solid #000000;
+	border-radius:6px;
+	font-size:30px;
+}
+
+.calcButton {
+	width:90px;
+	height:50px;
+	border-radius:6px;
+	border:1px solid #000000
+}
+
+#calcForm {
+	text-align:center;
+	margin-top:150px;
+}

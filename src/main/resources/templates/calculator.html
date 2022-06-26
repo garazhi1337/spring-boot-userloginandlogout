@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" th:href="@{/css/stylesheet.css}"/>
+<link rel="stylesheet" th:href="@{/css/calcsheet.css}"/>
+<title>Калькулятор</title>
+</head>
+<body>
+	<header th:insert="navbar :: header"></header>
+	<form name="calcForm" id="calcForm">
+	<div>
+		<input type=text id="calcInput" name="calcInput"></input><br>
+		<button class="calcButton" onClick="onClearClick()" type="button">C</button>
+		<button class="calcButton" onClick="onDelClick()" type="button">DEL</button>
+		<button class="calcButton" type="button">%</button>
+		<button class="calcButton" onClick="onDivClick()" type="button">/</button><br>
+		<button class="calcButton" onClick="onSevenClick()" type="button">7</button>
+		<button class="calcButton" onClick="onEightClick()" type="button">8</button>
+		<button class="calcButton" onClick="onNineClick()" type="button">9</button>
+		<button class="calcButton" onClick="onMulClick()" type="button">x</button><br>
+		<button class="calcButton" onClick="onFourClick()" type="button">4</button>
+		<button class="calcButton" onClick="onFiveClick()" type="button">5</button>
+		<button class="calcButton" onClick="onSixClick()" type="button">6</button>
+		<button class="calcButton" onClick="onMinusClick()" type="button">-</button><br>
+		<button class="calcButton" onClick="onOneClick()" type="button">1</button>
+		<button class="calcButton" onClick="onTwoClick()" type="button">2</button>
+		<button class="calcButton" onClick="onThreeClick()" type="button">3</button>
+		<button class="calcButton" onClick="onPlusClick()" type="button">+</button><br>
+		<button class="calcButton" type="button">?</button>
+		<button class="calcButton" onClick="onZeroClick()" type="button">0</button>
+		<button class="calcButton" onClick="onDotClick()" type="button">.</button>
+		<button class="calcButton" onClick="onEqualsClick()" type="button">=</button><br>
+	</div>
+	</form>
+</body>
+<script src="/js/calculator.js"></script>
+</html>

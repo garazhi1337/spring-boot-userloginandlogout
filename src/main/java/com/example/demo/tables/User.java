@@ -1,7 +1,4 @@
-package com.example.demo.repository;
-
-import java.util.HashSet;
-import java.util.Set;
+package com.example.demo.tables;
 
 import javax.persistence.*;
 
