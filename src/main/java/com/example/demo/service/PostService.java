@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import com.example.demo.repository.PostRepository;
@@ -36,5 +37,9 @@ public class PostService {
 		}
 		
 		postRepository.save(post);
+	}
+	
+	public void addAllPostsToModel(Model model) {
+		model.addAttribute("posts", postRepository.findAll());
 	}
 }

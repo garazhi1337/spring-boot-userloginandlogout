@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.postsDiv {
+	border:1px solid #000000;
+	margin-bottom:10px;
+}
+
+#postsForm {
+	margin-top:100px;
+}
+
+#titleOutput {
+	margin-top:-5px;
+	margin-bottom:0px;
+	font-size:50px;
+}
+
+#fulltextOutput {
+	margin-top:0px;
+	font-size:20px;
+	margin-bottom:0px;
+}
+
+#authorOutput {
+	margin-top:0px;
+	font-size:20px;
+    margin-bottom:0px;
+}

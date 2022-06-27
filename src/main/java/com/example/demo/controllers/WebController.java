@@ -47,7 +47,8 @@ public class WebController {
 	}
 	
 	@GetMapping("/posts") 
-	public String getWather() {
+	public String getWather(Model model) {
+		postService.addAllPostsToModel(model);
 		return "posts";
 	}
 	

@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" th:href="@{/css/stylesheet.css}"/>
+<link rel="stylesheet" th:href="@{/css/postsStylesheet.css}"/>
 <meta charset="UTF-8">
 <title>Записи</title>
 </head>
@@ -9,23 +10,13 @@
 	<div>
 		<header th:insert="navbar :: header"></header>
 	</div>
-	<div id="postsTable">
-		<table>
-            <thead>
-        		 <tr>
-            		<th> Записи </th>
-       			 </tr>
-    		</thead>
-   			 <tbody>
-        		<tr>
-            		<td><span> </span></td>
-            		<td><span> </span></td>
-            		<td><span> </span></td>
-            		<td><span> </span></td>
-        		</tr>
-    		</tbody>
-		</table>
-		<a href="/posts/add">Добавить запись</a>
+	<form id="postsForm">
+	<div id="postsTable" th:each="post : ${posts}" class="postsDiv">
+		<h6 th:text=${post.title} id="titleOutput"></h6><br>
+		<h6 th:text=${post.fulltext} id="fulltextOutput"></h6><br>
+		<p>Автор: <span th:text=${post.author} id="authorOutput"></span></p><br>
 	</div>
+	</form>
+	<div><a href="/posts/add">Добавить запись</a></div>
 </body>
 </html>
